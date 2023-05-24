@@ -10,6 +10,7 @@ public abstract class PreguntaImpl implements Pregunta {
 	private String opcionInCorrecta2;
 	private String opcionInCorrecta3;
 	private String opcionInCorrecta4;
+	private Alumno alumno;
 
 	@Override
 	public String getTematica() {
@@ -89,6 +90,15 @@ public abstract class PreguntaImpl implements Pregunta {
 				+ ", opcionCorrecta=" + opcionCorrecta + ", opcionInCorrecta1=" + opcionInCorrecta1
 				+ ", opcionInCorrecta2=" + opcionInCorrecta2 + ", opcionInCorrecta3=" + opcionInCorrecta3
 				+ ", opcionInCorrecta4=" + opcionInCorrecta4 + "]";
+	}
+
+	@Override
+	public Alumno getAlumno() {
+		return alumno;
+	}
+
+	public void setAlumno(Alumno alumno) {
+		this.alumno = alumno;
 	}
 
 }

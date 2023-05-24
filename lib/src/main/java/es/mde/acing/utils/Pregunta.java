@@ -17,5 +17,7 @@ public interface Pregunta {
 	String getOpcionInCorrecta3();
 
 	String getOpcionInCorrecta4();
+	
+	Alumno getAlumno();
 
 }
