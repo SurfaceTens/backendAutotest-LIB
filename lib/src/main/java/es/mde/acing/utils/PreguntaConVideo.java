@@ -5,12 +5,12 @@ public class PreguntaConVideo implements ConVideo {
 	private String videoURL;
 
 	@Override
-	public String getaudioURL() {
+	public String getVideoURL() {
 		return videoURL;
 	}
 
-	public void setaudioURL(String audioURL) {
-		this.videoURL = audioURL;
+	public void setVideoURL(String videoURL) {
+		this.videoURL = videoURL;
 	}
 
 	@Override
