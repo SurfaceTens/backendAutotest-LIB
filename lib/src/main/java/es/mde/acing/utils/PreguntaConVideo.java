@@ -1,6 +1,6 @@
 package es.mde.acing.utils;
 
-public class PreguntaConAudio implements ConAudio {
+public class PreguntaConVideo implements ConVideo {
 	
 	private String audioURL;
 

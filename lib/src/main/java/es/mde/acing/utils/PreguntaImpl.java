@@ -1,5 +1,7 @@
 package es.mde.acing.utils;
 
+import java.util.List;
+
 public abstract class PreguntaImpl implements Pregunta {
 
 	private String tematica;
@@ -10,7 +12,7 @@ public abstract class PreguntaImpl implements Pregunta {
 	private String opcionInCorrecta2;
 	private String opcionInCorrecta3;
 	private String opcionInCorrecta4;
-	private Alumno alumno;
+	private List<PreguntaExamen> examenes;
 
 	@Override
 	public String getTematica() {
@@ -85,20 +87,20 @@ public abstract class PreguntaImpl implements Pregunta {
 	}
 
 	@Override
+	public List<PreguntaExamen> getExamenes() {
+		return examenes;
+	}
+
+	public void setExamenes(List<PreguntaExamen> examenes) {
+		this.examenes = examenes;
+	}
+
+	@Override
 	public String toString() {
 		return "PreguntaImpl [tematica=" + tematica + ", dificultad=" + dificultad + ", enunciado=" + enunciado
 				+ ", opcionCorrecta=" + opcionCorrecta + ", opcionInCorrecta1=" + opcionInCorrecta1
 				+ ", opcionInCorrecta2=" + opcionInCorrecta2 + ", opcionInCorrecta3=" + opcionInCorrecta3
-				+ ", opcionInCorrecta4=" + opcionInCorrecta4 + "]";
-	}
-
-	@Override
-	public Alumno getAlumno() {
-		return alumno;
-	}
-
-	public void setAlumno(Alumno alumno) {
-		this.alumno = alumno;
+				+ ", opcionInCorrecta4=" + opcionInCorrecta4 + ", examenes=" + examenes + "]";
 	}
 
 }

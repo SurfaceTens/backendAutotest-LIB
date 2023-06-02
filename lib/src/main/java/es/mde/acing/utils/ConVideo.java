@@ -1,6 +1,6 @@
 package es.mde.acing.utils;
 
-public interface ConAudio {
+public interface ConVideo {
 
 	String getaudioURL();
 

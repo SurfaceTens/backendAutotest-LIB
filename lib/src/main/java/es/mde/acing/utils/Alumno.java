@@ -7,7 +7,7 @@ public interface Alumno {
 	String getNombre();
 
 	String getApellidos();
-	
-	List<Pregunta> getPreguntas();
+
+	List<Examen> getExamen();
 
 }

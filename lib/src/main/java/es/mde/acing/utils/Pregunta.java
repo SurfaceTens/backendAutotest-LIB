@@ -1,5 +1,7 @@
 package es.mde.acing.utils;
 
+import java.util.List;
+
 public interface Pregunta {
 
 	String getTematica();
@@ -17,7 +19,7 @@ public interface Pregunta {
 	String getOpcionInCorrecta3();
 
 	String getOpcionInCorrecta4();
-	
-	Alumno getAlumno();
+
+	List<PreguntaExamen> getExamenes();
 
 }
