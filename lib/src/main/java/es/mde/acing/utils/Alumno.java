@@ -8,6 +8,8 @@ public interface Alumno {
 
 	String getApellidos();
 
-	List<Examen> getExamen();
+	List<Examen> getExamenes();
+
+	List<Pregunta> getPreguntas();
 
 }

@@ -6,8 +6,8 @@ public class AlumnoImpl implements Alumno {
 
 	private String nombre;
 	private String apellidos;
-	private List<Examen> examen;
-	private List<Pregunta> pregunta;
+	private List<Examen> examenes;
+	private List<Pregunta> preguntas;
 
 	@Override
 	public String getNombre() {
@@ -28,25 +28,26 @@ public class AlumnoImpl implements Alumno {
 	}
 
 	@Override
-	public List<Examen> getExamen() {
-		return examen;
+	public List<Examen> getExamenes() {
+		return examenes;
 	}
 
-	public void setExamen(List<Examen> examen) {
-		this.examen = examen;
+	public void setExamenes(List<Examen> examen) {
+		this.examenes = examen;
 	}
 
-	public List<Pregunta> getPregunta() {
-		return pregunta;
+	@Override
+	public List<Pregunta> getPreguntas() {
+		return preguntas;
 	}
 
-	public void setPregunta(List<Pregunta> pregunta) {
-		this.pregunta = pregunta;
+	public void setPreguntas(List<Pregunta> pregunta) {
+		this.preguntas = pregunta;
 	}
 
 	@Override
 	public String toString() {
-		return "AlumnoImpl [nombre=" + nombre + ", apellidos=" + apellidos + ", examen=" + examen + "]";
+		return "AlumnoImpl [nombre=" + nombre + ", apellidos=" + apellidos + ", examen=" + examenes + "]";
 	}
 
 }

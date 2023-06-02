@@ -22,4 +22,6 @@ public interface Pregunta {
 
 	List<PreguntaExamen> getExamenes();
 
+	Alumno getAlumno();
+
 }
