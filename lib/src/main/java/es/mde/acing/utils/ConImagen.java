@@ -1,6 +1,6 @@
 package es.mde.acing.utils;
 
-public interface conImagen {
+public interface ConImagen {
 
 	String getImagenURL();
 

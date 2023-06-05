@@ -1,6 +1,6 @@
 package es.mde.acing.utils;
 
-public class PreguntaConImagen extends PreguntaImpl implements conImagen {
+public class PreguntaConImagen extends PreguntaImpl implements ConImagen {
 
 	private String imagenURL;
 
