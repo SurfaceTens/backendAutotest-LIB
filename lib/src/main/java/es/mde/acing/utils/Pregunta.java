@@ -2,6 +2,8 @@ package es.mde.acing.utils;
 
 import java.util.List;
 
+import es.mde.acing.utils.PreguntaImpl.Adjunto;
+
 public interface Pregunta {
 
 	String getTematica();
@@ -23,5 +25,7 @@ public interface Pregunta {
 	List<PreguntaExamen> getExamenes();
 
 	Alumno getAlumno();
+
+	Adjunto getAdjunto();
 
 }

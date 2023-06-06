@@ -1,6 +1,6 @@
 package es.mde.acing.utils;
 
-public class PreguntaConImagen extends PreguntaImpl implements ConImagen {
+public class PreguntaConImagen extends PreguntaImpl implements ConImagen  {
 
 	private String imagenURL;
 
@@ -11,6 +11,11 @@ public class PreguntaConImagen extends PreguntaImpl implements ConImagen {
 
 	public void setImagenURL(String imagenURL) {
 		this.imagenURL = imagenURL;
+	}
+	
+	@Override
+	public Adjunto getAdjunto() {
+		return Adjunto.imagen;
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 package es.mde.acing.utils;
 
-public class PreguntaConVideo implements ConVideo {
+public class PreguntaConVideo extends PreguntaImpl implements ConVideo {
 	
 	private String videoURL;
 
@@ -11,6 +11,11 @@ public class PreguntaConVideo implements ConVideo {
 
 	public void setVideoURL(String videoURL) {
 		this.videoURL = videoURL;
+	}
+	
+	@Override
+	public Adjunto getAdjunto() {
+		return Adjunto.imagen;
 	}
 
 	@Override
