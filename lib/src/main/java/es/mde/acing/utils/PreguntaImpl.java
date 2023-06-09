@@ -12,14 +12,12 @@ public abstract class PreguntaImpl implements Pregunta {
 	private String opcionInCorrecta2;
 	private String opcionInCorrecta3;
 	private String opcionInCorrecta4;
-	
+
 	// Discriminador
 	public static enum Adjunto {
-		imagen,
-	    video
+		imagen, video
 	}
-	private Adjunto adjunto;
-	
+
 	// Relaciones
 	private List<PreguntaExamen> examenes;
 	private Alumno alumno;
@@ -119,17 +117,12 @@ public abstract class PreguntaImpl implements Pregunta {
 		return null;
 	}
 
-	public void setAdjunto(Adjunto adjunto) {
-		this.adjunto = adjunto;
-	}
-
 	@Override
 	public String toString() {
 		return "PreguntaImpl [tematica=" + tematica + ", dificultad=" + dificultad + ", enunciado=" + enunciado
 				+ ", opcionCorrecta=" + opcionCorrecta + ", opcionInCorrecta1=" + opcionInCorrecta1
 				+ ", opcionInCorrecta2=" + opcionInCorrecta2 + ", opcionInCorrecta3=" + opcionInCorrecta3
-				+ ", opcionInCorrecta4=" + opcionInCorrecta4 + ", adjunto=" + adjunto + ", examenes=" + examenes
-				+ ", alumno=" + alumno + "]";
+				+ ", opcionInCorrecta4=" + opcionInCorrecta4 + ", examenes=" + examenes + ", alumno=" + alumno + "]";
 	}
 
 }
