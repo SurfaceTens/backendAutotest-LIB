@@ -15,7 +15,7 @@ public class PreguntaConVideo extends PreguntaImpl implements ConVideo {
 	
 	@Override
 	public Adjunto getAdjunto() {
-		return Adjunto.imagen;
+		return Adjunto.video;
 	}
 
 	@Override
