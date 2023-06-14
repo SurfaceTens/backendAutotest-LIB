@@ -10,6 +10,6 @@ public interface Alumno {
 
 	List<Examen> getExamenes();
 
-	List<Pregunta> getPreguntas();
+//	List<Pregunta> getPreguntas();
 
 }

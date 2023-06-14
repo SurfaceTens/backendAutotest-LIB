@@ -6,7 +6,9 @@ public interface PreguntaExamen {
 
 	Pregunta getPregunta();
 
-	int getRespuesta();
+	String getRespuesta();
+
+	String getCorrecta();
 
 	boolean isAcertada();
 

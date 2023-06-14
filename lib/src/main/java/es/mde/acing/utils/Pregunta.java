@@ -19,12 +19,10 @@ public interface Pregunta {
 	String getOpcionInCorrecta2();
 
 	String getOpcionInCorrecta3();
-
-	String getOpcionInCorrecta4();
-
+	
 	List<PreguntaExamen> getExamenes();
 
-	Alumno getAlumno();
+//	Alumno getAlumno();
 
 	Adjunto getAdjunto();
 

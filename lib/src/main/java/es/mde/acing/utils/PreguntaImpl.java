@@ -11,7 +11,6 @@ public abstract class PreguntaImpl implements Pregunta {
 	private String opcionInCorrecta1;
 	private String opcionInCorrecta2;
 	private String opcionInCorrecta3;
-	private String opcionInCorrecta4;
 
 	// Discriminador
 	public static enum Adjunto {
@@ -20,7 +19,7 @@ public abstract class PreguntaImpl implements Pregunta {
 
 	// Relaciones
 	private List<PreguntaExamen> examenes;
-	private Alumno alumno;
+//	private Alumno alumno;
 
 	@Override
 	public String getTematica() {
@@ -85,14 +84,6 @@ public abstract class PreguntaImpl implements Pregunta {
 		this.opcionInCorrecta3 = opcionInCorrecta3;
 	}
 
-	@Override
-	public String getOpcionInCorrecta4() {
-		return opcionInCorrecta4;
-	}
-
-	public void setOpcionInCorrecta4(String opcionInCorrecta4) {
-		this.opcionInCorrecta4 = opcionInCorrecta4;
-	}
 
 	@Override
 	public List<PreguntaExamen> getExamenes() {
@@ -103,14 +94,14 @@ public abstract class PreguntaImpl implements Pregunta {
 		this.examenes = examenes;
 	}
 
-	@Override
-	public Alumno getAlumno() {
-		return alumno;
-	}
-
-	public void setAlumno(Alumno alumno) {
-		this.alumno = alumno;
-	}
+//	@Override
+//	public Alumno getAlumno() {
+//		return alumno;
+//	}
+//
+//	public void setAlumno(Alumno alumno) {
+//		this.alumno = alumno;
+//	}
 
 	@Override
 	public Adjunto getAdjunto() {
@@ -119,10 +110,7 @@ public abstract class PreguntaImpl implements Pregunta {
 
 	@Override
 	public String toString() {
-		return "PreguntaImpl [tematica=" + tematica + ", dificultad=" + dificultad + ", enunciado=" + enunciado
-				+ ", opcionCorrecta=" + opcionCorrecta + ", opcionInCorrecta1=" + opcionInCorrecta1
-				+ ", opcionInCorrecta2=" + opcionInCorrecta2 + ", opcionInCorrecta3=" + opcionInCorrecta3
-				+ ", opcionInCorrecta4=" + opcionInCorrecta4 + ", examenes=" + examenes + ", alumno=" + alumno + "]";
+		return "PreguntaImpl [tematica=" + tematica + ", dificultad=" + dificultad + ", enunciado=" + enunciado;
 	}
 
 }

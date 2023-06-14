@@ -7,7 +7,7 @@ public class AlumnoImpl implements Alumno {
 	private String nombre;
 	private String apellidos;
 	private List<Examen> examenes;
-	private List<Pregunta> preguntas;
+//	private List<Pregunta> preguntas;
 
 	@Override
 	public String getNombre() {
@@ -36,14 +36,14 @@ public class AlumnoImpl implements Alumno {
 		this.examenes = examen;
 	}
 
-	@Override
-	public List<Pregunta> getPreguntas() {
-		return preguntas;
-	}
-
-	public void setPreguntas(List<Pregunta> pregunta) {
-		this.preguntas = pregunta;
-	}
+//	@Override
+//	public List<Pregunta> getPreguntas() {
+//		return preguntas;
+//	}
+//
+//	public void setPreguntas(List<Pregunta> pregunta) {
+//		this.preguntas = pregunta;
+//	}
 
 	@Override
 	public String toString() {

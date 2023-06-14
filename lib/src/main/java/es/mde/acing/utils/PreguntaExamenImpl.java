@@ -4,8 +4,9 @@ public class PreguntaExamenImpl implements PreguntaExamen {
 
 	private Examen examen;
 	private Pregunta pregunta;
-	private int respuesta;
-	private boolean acertada;
+	private String respuesta; // Que respondio?
+	private String correcta; // Cual era la buena?
+	private boolean acertada; // Estaba bien?
 
 	@Override
 	public Examen getExamen() {
@@ -26,12 +27,21 @@ public class PreguntaExamenImpl implements PreguntaExamen {
 	}
 
 	@Override
-	public int getRespuesta() {
+	public String getRespuesta() {
 		return respuesta;
 	}
 
-	public void setRespuesta(int respuesta) {
+	public void setRespuesta(String respuesta) {
 		this.respuesta = respuesta;
+	}
+
+	@Override
+	public String getCorrecta() {
+		return correcta;
+	}
+
+	public void setCorrecta(String correcta) {
+		this.correcta = correcta;
 	}
 
 	@Override
@@ -45,8 +55,8 @@ public class PreguntaExamenImpl implements PreguntaExamen {
 
 	@Override
 	public String toString() {
-		return "Pregunta_Examen [examen=" + examen + ", pregunta=" + pregunta + ", respuesta=" + respuesta
-				+ ", acertada=" + acertada + "]";
+		return "PreguntaExamenImpl [examen=" + examen + ", pregunta=" + pregunta + ", respuesta=" + respuesta
+				+ ", correcta=" + correcta + ", acertada=" + acertada + "]";
 	}
 
 }
