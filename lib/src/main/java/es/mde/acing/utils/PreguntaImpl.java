@@ -105,7 +105,7 @@ public abstract class PreguntaImpl implements Pregunta {
 
 	@Override
 	public Adjunto getAdjunto() {
-		return null;
+		return Adjunto.ninguno;
 	}
 
 	@Override
