@@ -14,7 +14,7 @@ public abstract class PreguntaImpl implements Pregunta {
 
 	// Discriminador
 	public static enum Adjunto {
-		imagen, video
+		imagen, video, ninguno
 	}
 
 	// Relaciones
