@@ -6,6 +6,7 @@ public class ExamenImpl implements Examen {
 
 	private Alumno alumno;
 	private List<PreguntaExamen> preguntas;
+	private int nota;
 
 	@Override
 	public Alumno getAlumno() {
@@ -25,9 +26,17 @@ public class ExamenImpl implements Examen {
 		this.preguntas = preguntas;
 	}
 
+	public int getNota() {
+		return nota;
+	}
+
+	public void setNota(int nota) {
+		this.nota = nota;
+	}
+
 	@Override
 	public String toString() {
-		return "ExamenImpl [alumno=" + alumno + ", preguntas=" + preguntas + "]";
+		return "ExamenImpl [alumno=" + alumno + ", preguntas=" + preguntas + "]" + "nota: " + nota;
 	}
 
 }
