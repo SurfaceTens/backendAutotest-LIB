@@ -8,4 +8,12 @@ public interface Examen {
 
 	List<PreguntaExamen> getPreguntas();
 
+	int getAciertos();
+
+	int getFallos();
+
+	String getNota();
+
+	boolean isEntregado();
+
 }

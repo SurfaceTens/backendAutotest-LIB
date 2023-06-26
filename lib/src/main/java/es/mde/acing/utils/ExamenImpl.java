@@ -29,6 +29,7 @@ public class ExamenImpl implements Examen {
 		this.preguntas = preguntas;
 	}
 
+	@Override
 	public int getAciertos() {
 		return aciertos;
 	}
@@ -37,6 +38,7 @@ public class ExamenImpl implements Examen {
 		this.aciertos = aciertos;
 	}
 
+	@Override
 	public int getFallos() {
 		return fallos;
 	}
@@ -45,6 +47,7 @@ public class ExamenImpl implements Examen {
 		this.fallos = fallos;
 	}
 
+	@Override
 	public String getNota() {
 		return nota;
 	}
@@ -53,6 +56,7 @@ public class ExamenImpl implements Examen {
 		this.nota = nota;
 	}
 
+	@Override
 	public boolean isEntregado() {
 		return entregado;
 	}
