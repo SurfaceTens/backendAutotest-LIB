@@ -6,6 +6,7 @@ public class ExamenImpl implements Examen {
 
 	private Alumno alumno;
 	private List<PreguntaExamen> preguntas;
+	private boolean entregado;
 	private int aciertos;
 	private int fallos;
 	private String nota;
@@ -50,6 +51,14 @@ public class ExamenImpl implements Examen {
 
 	public void setNota(String nota) {
 		this.nota = nota;
+	}
+
+	public boolean isEntregado() {
+		return entregado;
+	}
+
+	public void setEntregado(boolean entregado) {
+		this.entregado = entregado;
 	}
 
 	@Override
