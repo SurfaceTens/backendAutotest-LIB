@@ -6,7 +6,9 @@ public class ExamenImpl implements Examen {
 
 	private Alumno alumno;
 	private List<PreguntaExamen> preguntas;
-	private int nota;
+	private int aciertos;
+	private int fallos;
+	private String nota;
 
 	@Override
 	public Alumno getAlumno() {
@@ -26,11 +28,27 @@ public class ExamenImpl implements Examen {
 		this.preguntas = preguntas;
 	}
 
-	public int getNota() {
+	public int getAciertos() {
+		return aciertos;
+	}
+
+	public void setAciertos(int aciertos) {
+		this.aciertos = aciertos;
+	}
+
+	public int getFallos() {
+		return fallos;
+	}
+
+	public void setFallos(int fallos) {
+		this.fallos = fallos;
+	}
+
+	public String getNota() {
 		return nota;
 	}
 
-	public void setNota(int nota) {
+	public void setNota(String nota) {
 		this.nota = nota;
 	}
 
