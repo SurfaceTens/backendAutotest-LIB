@@ -6,7 +6,9 @@ public interface ConImagen {
 
 	byte[] getImagen();
 
-	void setImagen(byte[] imagen);
+	String getImagenBase64();
+
+	boolean esImagenValida();
 
 	Adjunto getAdjunto();
 
